@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CDN for colorman.me</title>
+        <style>
+            :root {
+                --from: #b830c2;
+                --via: #6c74c2;
+                --to: #58ad9c;
+                --gradient: linear-gradient(
+                    135deg,
+                    var(--from) 0%,
+                    var(--from) 20%,
+                    var(--via) 50%,
+                    var(--to) 80%,
+                    var(--to) 100%
+                );
+            }
+            body {
+                font-family: ui-sans-serif, system-ui, -apple-system,
+                    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+                    Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+                    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+                font-weight: 200;
+            }
+            section {
+                width: 100vw;
+                height: 100vh;
+                background: var(--gradient);
+                background-size: 200% 200%;
+                background-position: 50% 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div>
+                <p style="font-size: 5em; margin-bottom: -3rem;">Welcome to cdn.colorman.me.</p>
+                <p style="font-size: 2em">
+                    This is used exclusively to host content for colorman.me and
+                    associated subdomains.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
